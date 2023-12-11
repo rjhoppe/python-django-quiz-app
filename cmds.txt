@@ -1,0 +1,14 @@
+# Project init
+pip3 install django
+django-admin startproject core .
+python manage.py startapp quiz
+
+# Push model schema updates
+python manage.py makemigrations
+python manage.py migrate
+
+# Start server
+python manage.py runserver
+
+# Create admin (super) user
+python manage.py createsuperuser
